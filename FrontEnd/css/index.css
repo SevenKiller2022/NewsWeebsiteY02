@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Battambang', cursive;
+    left: 0;
+}
+body{
+    background: lightgray;
+}
+
+.navbar{
+    background: red;
+    box-shadow: 0px 0px 20px 0px gray;
+}
+.navbar .logo{
+    color: white;
+    font-weight: bold;
+}
+
+.navbar span{
+    color: red;
+    background: white;
+    border-radius: 1rem;
+    padding: 2px 20px;
+}
+.navbar .nav ul{
+    list-style-type: none;
+    display: flex;
+}
+.navbar .nav a{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+.nav a:hover{
+    color: red;
+    font-weight: bold;
+    background: white;
+    transition: .4s;
+    border-radius: 1rem;
+}
+
+
+/*Menu List*/
+
+.menu-dropdown{
+    display: none;
+    position: absolute;
+    font-weight: bold;
+
+}
+.menu-dropdown ul{
+    list-style-type: none;
+    background: red;
+    box-shadow: 0px 0px 6px 0px lightgray;
+    transition: .5s;
+    padding: 5px;
+    font-weight: bold;
+    position: relative;
+}
+
+.menu-dropdown ul li{
+    list-style-type: none;
+    display: inline-flex;
+}
+.menu-dropdown ul li a{
+    font-weight: bold;
+    left: 0;
+    color: black;
+    font-size: 18px;
+}
+
+
+.menu-list:hover .menu-dropdown{
+    display: block;
+    scroll-behavior: smooth;
+    transition: 5s;
+    left: 45%;
+}
+
+.menu-dropdown ul li a:hover{
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.icon-nav ul{
+    display: flex;
+}
+.icon-nav li{
+    list-style-type: none;
+}
+.icon-nav a{
+    padding: 10px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    
+}
+
+.container .sponsor-txt h3{
+    font-weight: bold;
+    animation: animation 5s infinite;
+}
+.container .main-txt span{
+    color: red;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 1rem;
+    padding: 5px;
+}
+.container .sub-txt {
+    animation: animation1 5s infinite;
+    font-weight: bold;
+}
+.container .sub-txt span{
+    color: red;
+    font-weight: bold;
+}
+
+/*hot-news*/
+.hot-news .start-header h4{
+    font-weight: bold;
+    color: red;
+    text-decoration: underline lightcoral;
+    cursor: pointer;
+
+}
+.hot-news .start-header p{
+    color: gray;
+    opacity: 80%;
+}
+
+
+
+.container .box-main{
+    background: white;
+    backdrop-filter: blur(20px);
+    border-radius: 1rem;
+}
+.container .box-main img{
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.541);
+}
+.container .box-main img:hover{
+    border-radius: 2rem;
+    transition: .5s;
+    padding: 10px;
+    filter: blur(10px);
+    
+}
+.container .detail p{
+    color: gray;
+}
+
+.container .main-history img{
+    border-radius: 2rem;
+}
+.container .main-history img:hover{
+    transform: translate(20px);
+    transition: .5s;
+}
+
+.container .main-history h1{
+    font-weight: bold;
+}
+.container .main-history span{
+    color: red;
+}
+
+.main-about .box{
+    background-color: rgba(226, 25, 25, 0.664);
+    border-radius: 1rem;
+    font-weight: bold;
+
+}
+
+.main-about .box h3{
+    font-weight: bold;
+    color: rgb(41, 37, 37);
+}
+.main-about .box p{
+    color: rgb(63, 58, 58);
+    opacity: 90%;
+}
+.main-about .box img{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 30px red;
+}
+
+/*contact*/
+
+.contact .header h2{
+    color: white;
+    font-weight: bold;
+    background: brown;
+    padding: 20px;
+    border-radius: 1rem 0 1rem 0;
+}
+.contact .header span{
+    color: red;
+}
+.footer1{
+    background: red;
+    height: 250px;
+    margin-top: 50px;
+}
+.footer2{
+    background: darkred;
+    height: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animation{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes animation1{
+    0%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+
+
+
+

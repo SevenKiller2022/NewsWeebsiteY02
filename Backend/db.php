@@ -1,0 +1,9 @@
+<?php
+$db="localhost";
+$username="root";
+$pass="";
+$dbname="newswebsitedb";
+$conn=mysqli_connect($db,$username,$pass,$dbname);
+if(!$conn){
+    echo("Error".mysqli_error($conn));
+}
